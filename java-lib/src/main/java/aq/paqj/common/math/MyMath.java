@@ -9,4 +9,11 @@ public class MyMath {
 
         return ca.add(cb);
     }
+
+    public static Complex sub(double a, double b) {
+        Complex ca = new Complex(a);
+        Complex cb = new Complex(b);
+
+        return ca.subtract(cb);
+    }
 }

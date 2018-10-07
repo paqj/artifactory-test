@@ -15,7 +15,8 @@ public class App {
         Complex re = MyMath.add(1.0, 2.0);
         System.out.println(re);
 
-//        re = MyMath.sub(1.0, 2.0);
-//        System.out.println(re);
+        re = MyMath.sub(1.0, 2.0);
+        System.out.println(re);
+
     }
 }
