@@ -1,0 +1,87 @@
+{
+  "version" : "1.0.1",
+  "name" : "common-math",
+  "number" : "1538889148123",
+  "type" : "GRADLE",
+  "buildAgent" : {
+    "name" : "Gradle",
+    "version" : "4.10"
+  },
+  "agent" : {
+    "name" : "Gradle",
+    "version" : "4.10"
+  },
+  "started" : "2018-10-07T14:12:28.113+0900",
+  "durationMillis" : 771,
+  "principal" : "paqj",
+  "artifactoryPrincipal" : "paqj-test",
+  "artifactoryPluginVersion" : "Unknown",
+  "vcs" : [ ],
+  "licenseControl" : {
+    "runChecks" : false,
+    "includePublishedArtifacts" : false,
+    "autoDiscover" : false,
+    "licenseViolationsRecipientsList" : "",
+    "scopesList" : ""
+  },
+  "modules" : [ {
+    "id" : "aq.paqj.common:common-math:0.0.1-SNAPSHOT",
+    "artifacts" : [ {
+      "type" : "jar",
+      "sha1" : "05f314a7b1b80aec6f3841e38d628306dcdde45a",
+      "md5" : "c364cce7e75af7a2fae17399d0f9b067",
+      "name" : "common-math-0.0.1-SNAPSHOT.jar"
+    }, {
+      "type" : "pom",
+      "sha1" : "147b4604a8b3d79522b0e6dd9cdfa41c3db5740e",
+      "md5" : "c443d4ae69fe969a4013944289fb107f",
+      "name" : "common-math-0.0.1-SNAPSHOT.pom"
+    } ],
+    "excludedArtifacts" : [ ],
+    "dependencies" : [ {
+      "type" : "jar",
+      "sha1" : "e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf",
+      "md5" : "5b730d97e4e6368069de1983937c508e",
+      "id" : "org.apache.commons:commons-math3:3.6.1",
+      "scopes" : [ "compileClasspath" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c947004bb13d18182be60077ade044099e4f26f1",
+      "md5" : "7d7838b57e04ae0164714c56ac9e20d9",
+      "id" : "com.google.guava:guava:23.0",
+      "scopes" : [ "compileClasspath" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf",
+      "md5" : "1d5a772e400b04bb67a7ef4a0e0996d8",
+      "id" : "com.google.code.findbugs:jsr305:1.3.9",
+      "scopes" : [ "compileClasspath" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5f65affce1684999e2f4024983835efc3504012e",
+      "md5" : "98051758c08c9b7111b3268655069432",
+      "id" : "com.google.errorprone:error_prone_annotations:2.0.18",
+      "scopes" : [ "compileClasspath" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "976d8d30bebc251db406f2bdb3eb01962b5685b3",
+      "md5" : "9b806ea001e354d4e05f29c62b949e20",
+      "id" : "com.google.j2objc:j2objc-annotations:1.1",
+      "scopes" : [ "compileClasspath" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "775b7e22fb10026eed3f86e8dc556dfafe35f2d5",
+      "md5" : "9d42e46845c874f1710a9f6a741f6c14",
+      "id" : "org.codehaus.mojo:animal-sniffer-annotations:1.14",
+      "scopes" : [ "compileClasspath" ]
+    } ]
+  } ],
+  "governance" : {
+    "blackDuckProperties" : {
+      "runChecks" : false,
+      "includePublishedArtifacts" : false,
+      "autoCreateMissingComponentRequests" : false,
+      "autoDiscardStaleComponentRequests" : false
+    }
+  }
+}

@@ -10,6 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'maven-publish'
+    id "com.jfrog.artifactory" version "4.7.5"
 }
 
 group = 'aq.paqj.common'
@@ -18,12 +19,36 @@ version = '0.0.1-SNAPSHOT'
 publishing {
     publications {
         mavenPaqjMath(MavenPublication){
-            //  artifact 별 세팅 가능 
+            //  artifact 별 세팅 가능
 //            groupId = 'aq.paqj.common'
 //            artifactId = 'common-math'
 //            version = '1.1'
             
             from components.java
+        }
+    }
+}
+
+artifactory {
+    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+    publish {
+        repository {
+            repoKey = 'gradle-release-local'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+        }
+        defaults {
+            publications('mavenPaqjMath')
+        }
+    }
+    resolve {
+        repository {
+            repoKey = 'gradle-release'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+
         }
     }
 }
@@ -37,11 +62,4 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
-}
-
-// In this section you declare where to find the dependencies of your project
-repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
 }
